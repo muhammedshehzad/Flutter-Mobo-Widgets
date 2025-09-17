@@ -37,7 +37,7 @@ class CustomDateSelector extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: isDark ? const Color(0xFF2A2A2A) : Colors.grey[50],
+              color: isDark ? const Color(0xFF2A2A2A) : Color(0xffF8FAFB),
               borderRadius: BorderRadius.circular(12),
               border: showBorder
                   ? Border.all(
@@ -47,9 +47,9 @@ class CustomDateSelector extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Icon(
-                  HugeIcons.strokeRoundedCalendar01 as IconData?,
-                  color: isDark ? Colors.grey[400] : Colors.grey[600],
+                HugeIcon(
+                  icon: HugeIcons.strokeRoundedCalendar01,
+                  color: isDark ? Colors.grey[400]! : Colors.grey[600]!,
                 ),
                 const SizedBox(width: 12),
                 Expanded(

@@ -62,7 +62,7 @@ class CustomDropdownField extends StatelessWidget {
               ),
             ),
             filled: true,
-            fillColor: isDark ? const Color(0xFF2A2A2A) : Colors.grey[50],
+            fillColor: isDark ? const Color(0xFF2A2A2A) : Color(0xffF8FAFB),
             labelStyle: TextStyle(
               fontFamily: GoogleFonts.manrope(fontWeight: FontWeight.w400).fontFamily,
               color: isDark ? Colors.white70 : Color(0xff7F7F7F),
