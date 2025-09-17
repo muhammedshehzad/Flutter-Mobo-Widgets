@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'widgets/app_theme.dart';
 import 'widgets/custom_datepicker.dart';
@@ -84,7 +85,15 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Widget Samples', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+              const Text(
+                'Mobo Theme Color',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: AppTheme.primaryColor,
+                ),
+              ),
+
               const SizedBox(height: 20),
               CustomDateSelector(
                 onTap: () async {
